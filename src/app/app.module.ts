@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -24,7 +25,11 @@ import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-ed
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    // RouterModule.forRoot([
+    //   { path: 'app-recipe-list', component: RecipeListComponent},
+    //   { path: 'app-shopping-list', component: ShoppingListComponent}
+    // ])
   ],
   providers: [],
   bootstrap: [AppComponent]
